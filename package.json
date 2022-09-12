@@ -1,0 +1,21 @@
+{
+  "name": "adota-pet",
+  "version": "1.0.0",
+  "description": "projeto de um webapp para adoção de pets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malinhodev/adota-pet.git"
+  },
+  "keywords": [],
+  "author": "malinhodev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malinhodev/adota-pet/issues"
+  },
+  "homepage": "https://github.com/malinhodev/adota-pet#readme"
+}
