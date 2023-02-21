@@ -2,7 +2,7 @@ const mongoose = require('../db/connex')
 const { Schema } = mongoose
 
 const User = mongoose.model(
-    'user',
+    'User',
     new Schema({
         name: {
             type: String,
@@ -25,7 +25,7 @@ const User = mongoose.model(
         },
     }, 
         { timestamps : true },
-    )
+    ),
 )
 
 module.exports = User
