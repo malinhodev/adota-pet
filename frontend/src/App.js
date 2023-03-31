@@ -2,6 +2,7 @@ import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 //comoponents
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+import Container from './components/layout/Container'
 //pages
 import Login from './components/pages/Auth/Login'
 import Register from './components/pages/Auth/Register'
@@ -11,6 +12,7 @@ function App() {
   return (
     <Router>
       <Navbar/>
+        <Container>
         <Routes>
           <Route path='/login' element={<Login/>} />
               
@@ -19,6 +21,7 @@ function App() {
           <Route path='/' element={<Home/>} />
                 
         </Routes>
+        </Container>
       <Footer/>
     </Router>
   );
