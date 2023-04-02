@@ -1,12 +1,13 @@
 import Input from '../../form/Input'
-
+import styles from '../../form/Form.module.css'
+import {Link} from 'react-router-dom'
 function Register(){
-    function handleOnChange(e){
+    function handleChange(e){
         
     }
 
     return (
-        <section>
+        <section className={styles.form_container}>
             <h1>Registrar</h1>
             <form>
                 <Input
@@ -14,38 +15,41 @@ function Register(){
                     type="text"
                     name="name"
                     placeholder="Digite o seu nome"
-                    handleOnChange={handleOnChange}
+                    handleOnChange={handleChange}
                 />
                 <Input
-                    text="e-mail"
+                    text="E-mail"
                     type="text"
                     name="email"
                     placeholder="Digite o seu email"
-                    handleOnChange={handleOnChange}
+                    handleOnChange={handleChange}
                 />
                 <Input
-                    text="telefone"
+                    text="Telefone"
                     type="text"
                     name="phone"
                     placeholder="Digite o seu telefone"
-                    handleOnChange={handleOnChange}
+                    handleOnChange={handleChange}
                 />
                 <Input
-                    text="senha"
+                    text="Senha"
                     type="password"
                     name="password"
                     placeholder="Digite a sua senha"
-                    handleOnChange={handleOnChange}
+                    handleOnChange={handleChange}
                 />
                  <Input
-                    text="confimação de senha"
+                    text="Confimação de senha"
                     type="password"
                     name="confirmPassword"
                     placeholder="Confirme a sua senha"
-                    handleOnChange={handleOnChange}
+                    handleOnChange={handleChange}
                 />
                 <input type="submit" value="enviar" />
             </form>
+            <p>
+                Já tem conta? <Link to="/login">Clique aqui.</Link>
+            </p>
         </section>
     )
 }
